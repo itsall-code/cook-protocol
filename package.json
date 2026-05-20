@@ -1,0 +1,36 @@
+{
+  "name": "cook-protocol",
+  "version": "1.0.0",
+  "description": "Protocol automation smoke test scaffold for generated protocols.d.ts based game servers.",
+  "main": "test/tools/protocol_tools.js",
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/itsall-code/cook-protocol.git"
+  },
+  "bugs": {
+    "url": "https://github.com/itsall-code/cook-protocol/issues"
+  },
+  "homepage": "https://github.com/itsall-code/cook-protocol#readme",
+  "scripts": {
+    "protocol:list": "node test/tools/protocol_runner.js list",
+    "protocol:smoke": "node test/tools/protocol_runner.js smoke",
+    "protocol:run": "node test/tools/protocol_runner.js run",
+    "smoke": "node test/tools/protocol_runner.js smoke",
+    "test": "node test/tools/protocol_runner.js list"
+  },
+  "keywords": [
+    "protocol",
+    "automation",
+    "smoke-test",
+    "websocket",
+    "qa"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
